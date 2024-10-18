@@ -29,8 +29,10 @@ function operacion(){
         <hr>
         <h2>${n1} ${tipo} ${n2} = ${oper}</h2>`;
     }
-    else
-        alert("Ingresa sólo números.");
+    else{result= document.getElementById("resultado").innerHTML = `<h2>Ingrese solo números...</h2>`;
+        alert('Ingrese solo números...')
+    }
+        
 }
 
 function isNumber(n){

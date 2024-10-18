@@ -16,7 +16,8 @@ body {
     background-image: url(./desktop.jpg);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vmx;
+    /* height: 100vmx; */
+    background-repeat: no-repeat;
 }
 
 #contenedor {
@@ -33,11 +34,14 @@ h1 {
     font-size: 4vw;
     font-weight: normal;
     font-style: italic;
+    background-color: #a44444;
 }
 
 form {
     text-align: center;
     color: white;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 label {
@@ -56,4 +60,44 @@ label {
     font-weight: bold;
     width: auto;
     color: black;
+}
+
+hr {
+    color: white;
+}
+
+#boton {
+    margin-top: 2vw;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: #0fc0f6f0;
+    color: white;
+    font-weight: bold;
+}
+
+#boton:hover {
+    margin-top: 2vw;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: #06485cf0;
+    color: white;
+    font-weight: bold;
+}
+
+#boton:active {
+    margin-top: 2vw;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: #5db672f0;
+    color: white;
+    font-weight: bold;
+}
+
+#resultado {
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: normal;
+    font-style: italic;
+    background-color: #a44444aa;
 }
