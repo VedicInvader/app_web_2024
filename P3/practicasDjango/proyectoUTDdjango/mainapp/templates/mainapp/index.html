@@ -5,6 +5,28 @@
 {% endblock title %}
 
 {% block content %}
-    {{content}}
+    <h1>{{title}}</h1>
+    <h2>{{content}}</h2>
+
+    {% if messages %}
+        {% for message in messages  %}
+            <div class="alert alert-success">
+                {{message}}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if user.email  %}
+            <br>
+            <hr>
+            <br>
+            <h2>Bienvenido, {{user.first_name}} {{user.last_name}}</h2>
+            <p>
+                {{user.email}}
+            </p>
+    {% else %}
+            <h2>Por favor, inicie sesión...</h2>
+    {% endif %}
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut necessitatibus molestias distinctio nulla nisi, molestiae officia accusantium unde at ducimus voluptates architecto deleniti error. Tempore dicta ratione doloremque modi.</p>
 {% endblock content %}
